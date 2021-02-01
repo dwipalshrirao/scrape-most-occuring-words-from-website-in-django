@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    .container {
+        position:fixed;
+    top: 30%;
+    left: 50%;
+    width:60em;
+    height:30em;
+    margin-top: -9em; /*set to a negative number 1/2 of your height*/
+    margin-left: -25em; /*set to a negative number 1/2 of your width*/
+    border: 1px solid #ccc;
+    /* background-color: #f3f3f3; */
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <center>
+
+        <h2>Result</h2>
+        <p style="color: red;">{{massege}} </p>
+        {%if url%}
+        <p style="color: red;">url:- {{url}} </p>
+        {%endif%}
+    </center>
+
+<table>
+  <tr>
+    <th>sr. No.</th>
+    <th>words</th>
+    <th>frequency</th>
+  </tr>
+  {%if words%}
+  {%for i in words%}
+  <tr>
+    <td>{{forloop.counter}}</td>
+    <td> {{i.0}}</td>
+    <td>{{i.1}} </td>
+  </tr>
+  {%endfor%}
+  {%endif%}
+
+  {%if wordsfrmdatabase%}
+  {%for i in wordsfrmdatabase%}
+  <tr>
+    <td>{{forloop.counter}}</td>
+    <td> {{i.word}}</td>
+    <td>{{i.frequency}} </td>
+  </tr>
+  {%endfor%}
+  {%endif%}
+
+
+</table>
+</div>
+</body>
+</html>
