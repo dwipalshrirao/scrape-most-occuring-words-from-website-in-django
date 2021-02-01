@@ -30,12 +30,29 @@ python3 manage.py migrate
 
 python3 manage.py runserver
 ```
+
 4. go to 'http://127.0.0.1:8000/' , it will looks like:
-![image](https://github.com/dwipalshrirao/scrape-most-occuring-words-from-website-in-django/blob/main/Screenshot12.png)
 
-enter url then will redirect to 'http://127.0.0.1:8000/result' and you can see result, which will look like:
-![image](https://github.com/dwipalshrirao/scrape-most-occuring-words-from-website-in-django/blob/main/Screenshot13.png)
+<p align="center" width="100%">
+    <img src="https://github.com/dwipalshrirao/scrape-most-occuring-words-from-website-in-django/blob/main/Screenshot12.png"> 
+</p>
 
-Now if you enter same url again then it will show result with some massege which looks like:
+<!-- ![image](https://github.com/dwipalshrirao/scrape-most-occuring-words-from-website-in-django/blob/main/Screenshot12.png) -->
 
-![image](https://github.com/dwipalshrirao/scrape-most-occuring-words-from-website-in-django/blob/main/Screenshot14.png)
+    enter url then will redirect to 'http://127.0.0.1:8000/result' and you can see result,
+     which will look like:
+
+
+<p align="center" width="100%">
+    <img src="https://github.com/dwipalshrirao/scrape-most-occuring-words-from-website-in-django/blob/main/Screenshot13.png"> 
+</p>
+<!-- ![image](https://github.com/dwipalshrirao/scrape-most-occuring-words-from-website-in-django/blob/main/Screenshot13.png) -->
+
+Now if you enter same url again then it will show result with
+ some massege which looks like:
+
+
+<p align="center" width="100%">
+    <img src="https://github.com/dwipalshrirao/scrape-most-occuring-words-from-website-in-django/blob/main/Screenshot14.png"> 
+</p>
+<!-- ![image](https://github.com/dwipalshrirao/scrape-most-occuring-words-from-website-in-django/blob/main/Screenshot14.png) -->
